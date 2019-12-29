@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Simon | 吕亮的博客</title>
   
-  <subtitle>喜欢宇宙|海贼迷|电影爱好者|前端开发</subtitle>
+  <subtitle>宇宙 | 海贼迷 | 电影 | 前端开发</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
@@ -270,7 +270,6 @@
       
       
         &lt;p&gt;my first blog&lt;/p&gt;
-
       
     
     </summary>
@@ -279,11 +278,11 @@
       <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
     
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
-    
       <category term="html" scheme="http://yoursite.com/tags/html/"/>
     
       <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
     
   </entry>
   
