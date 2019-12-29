@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-19T15:41:59.025Z</updated>
+  <updated>2019-12-29T15:57:22.805Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,44 +17,273 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>blog</title>
-    <link href="http://yoursite.com/2019/11/19/blog/"/>
-    <id>http://yoursite.com/2019/11/19/blog/</id>
-    <published>2019-11-19T13:42:32.000Z</published>
-    <updated>2019-11-19T15:41:59.025Z</updated>
+    <title>webpack打包压缩优化常见方法</title>
+    <link href="http://yoursite.com/2019/12/22/%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/12/22/%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%B3%95/</id>
+    <published>2019-12-21T16:00:00.000Z</published>
+    <updated>2019-12-29T15:57:22.805Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、通过-externals-加载外部-CDN-资源"><a href="#一、通过-externals-加载外部-CDN-资源" class="headerlink" title="一、通过 externals 加载外部 CDN 资源"></a>一、通过 externals 加载外部 CDN 资源</h3><h4 id="1、通过在-webpack配置文件的-externals-节点声明需要在打包过程中排除的打包资源"><a href="#1、通过在-webpack配置文件的-externals-节点声明需要在打包过程中排除的打包资源" class="headerlink" title="1、通过在 webpack配置文件的 externals 节点声明需要在打包过程中排除的打包资源"></a>1、通过在 webpack配置文件的 externals 节点声明需要在打包过程中排除的打包资源</h4><p>代码示例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">config.set( &apos;externals&apos;, &#123;</span><br><span class="line">    vue: &apos;Vue&apos;,</span><br><span class="line">    axios: &apos;axios&apos;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h4 id="2、在-pulic-中的-index-html-中以-script-形式引入相应的js和css文件"><a href="#2、在-pulic-中的-index-html-中以-script-形式引入相应的js和css文件" class="headerlink" title="2、在 pulic 中的 index.html 中以 script 形式引入相应的js和css文件"></a>2、在 pulic 中的 index.html 中以 script 形式引入相应的js和css文件</h4>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;一、通过-externals-加载外部-CDN-资源&quot;&gt;&lt;a href=&quot;#一、通过-externals-加载外部-CDN-资源&quot; class=&quot;headerlink&quot; title=&quot;一、通过 externals 加载外部 CDN 资源&quot;&gt;&lt;/a&gt;一、通过 ext
+      
     
     </summary>
     
     
+      <category term="打包压缩" scheme="http://yoursite.com/categories/%E6%89%93%E5%8C%85%E5%8E%8B%E7%BC%A9/"/>
     
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="打包压缩" scheme="http://yoursite.com/tags/%E6%89%93%E5%8C%85%E5%8E%8B%E7%BC%A9/"/>
     
   </entry>
   
   <entry>
-    <title>hellow-world</title>
-    <link href="http://yoursite.com/2019/11/19/hellow-world/"/>
-    <id>http://yoursite.com/2019/11/19/hellow-world/</id>
-    <published>2019-11-19T13:27:30.000Z</published>
-    <updated>2019-11-19T15:41:58.422Z</updated>
+    <title>项目中 git 常用操作总结</title>
+    <link href="http://yoursite.com/2019/12/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2019/12/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2019-12-19T16:00:00.000Z</published>
+    <updated>2019-12-29T15:54:57.821Z</updated>
     
-    <content type="html"><![CDATA[<p>say some thing</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="将本地项目与-github-仓库关联"><a href="#将本地项目与-github-仓库关联" class="headerlink" title="将本地项目与 github 仓库关联"></a>将本地项目与 github 仓库关联</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin github仓库地址</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure><h3 id="创建新的分支"><a href="#创建新的分支" class="headerlink" title="创建新的分支"></a>创建新的分支</h3><p><code>git checkout -b &quot;分支名字&quot;</code></p><h3 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h3><p><code>git checkout &quot;分支名字&quot;</code></p><h3 id="本地提交代码修改（所有）"><a href="#本地提交代码修改（所有）" class="headerlink" title="本地提交代码修改（所有）"></a>本地提交代码修改（所有）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;提交commit内容&quot;</span><br></pre></td></tr></table></figure><h3 id="提交分支代码到github中托管"><a href="#提交分支代码到github中托管" class="headerlink" title="提交分支代码到github中托管"></a>提交分支代码到github中托管</h3><p><code>git push</code></p><h3 id="本地合并分支代码到主分支中"><a href="#本地合并分支代码到主分支中" class="headerlink" title="本地合并分支代码到主分支中"></a>本地合并分支代码到主分支中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge 要合并的分支的名字</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;say some thing&lt;/p&gt;
+        &lt;h3 id=&quot;将本地项目与-github-仓库关联&quot;&gt;&lt;a href=&quot;#将本地项目与-github-仓库关联&quot; class=&quot;headerlink&quot; title=&quot;将本地项目与 github 仓库关联&quot;&gt;&lt;/a&gt;将本地项目与 github 仓库关联&lt;/h3&gt;&lt;figure c
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack 使用的一些常用配置</title>
+    <link href="http://yoursite.com/2019/12/18/Webpack%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/12/18/Webpack%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</id>
+    <published>2019-12-17T16:00:00.000Z</published>
+    <updated>2019-12-29T15:53:10.847Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、修改-webpack-默认的打包路径"><a href="#一、修改-webpack-默认的打包路径" class="headerlink" title="一、修改 webpack 默认的打包路径"></a>一、修改 webpack 默认的打包路径</h3><blockquote><p>首先，webpack默认的入口文件位置为 src =&gt; index.js</p></blockquote><blockquote><p>默认的输出文件位置为 dist =&gt; main.js</p></blockquote><blockquote><p>如需修改打包的入口与出口，需要在webpack.config.js中添加如下配置，注意entry和output是作为属性暴露的：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const path = require(&apos;path&apos;) // node 中专门操作路径的模块</span><br><span class="line">entry: path.join(__dirname, &apos;./src/index.js&apos;), // 定义入口文件的路径和文件名字</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.join(__dirname, &apos;./dist&apos;), // 输入文件的存放路径</span><br><span class="line">    filename: &apos;bundle.js&apos;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><p>##</p><h3 id="二、为-webpack-添加自动打包功能"><a href="#二、为-webpack-添加自动打包功能" class="headerlink" title="二、为 webpack 添加自动打包功能"></a>二、为 webpack 添加自动打包功能</h3><blockquote><p>先运行 npm i webpack-dev-server -D （-D 是–save -dev 的缩写，表示仅用于开发环境，生产环境用不到）</p></blockquote><blockquote><p>在 package.json 文件中的 script  对象中添加 dev 属性(–open 表示打包后后自动在浏览器打开页面， –host 配置IP地址， –port 配置端口)：</p></blockquote><p><code>&quot;dev&quot;: &quot;webpack-dev-server --open --host 127.0.0.1 --port 8888&quot;</code></p><blockquote><p>将 src 中的 index.html 中的script 脚本引用路径修改为 “/buldle.js”</p></blockquote><blockquote><p>运行 npm run dev 命令进行重新打包</p></blockquote><p>##</p><h3 id="三、配置-html-webpack-plugin-生成预览页面"><a href="#三、配置-html-webpack-plugin-生成预览页面" class="headerlink" title="三、配置 html-webpack-plugin 生成预览页面"></a>三、配置 html-webpack-plugin 生成预览页面</h3><blockquote><p>先运行 npm i html-webpack-plugin -D 安装插件</p></blockquote><blockquote><p>修改 webpack.config.js 中的头部文件区域，添加如下配置：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const HtmlWebpackplugin = require(&quot;html-webpack-plugin&quot;)</span><br><span class="line">const htmlPlugin = new HtmlWebpackplugin(&#123;</span><br><span class="line">  template: &quot;./src/index.html&quot;,</span><br><span class="line">  filename: &quot;index.html&quot;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><blockquote><p>修改 webpack.config.js 中增加向外暴露的配置对象，增加一个plugins属性</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  plugins: [htmlPlugin]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>##</p><h3 id="四、webpack-加载器的基本使用"><a href="#四、webpack-加载器的基本使用" class="headerlink" title="四、webpack 加载器的基本使用"></a>四、webpack 加载器的基本使用</h3><h4 id="1-打包处理-css-文件"><a href="#1-打包处理-css-文件" class="headerlink" title="1.打包处理 css 文件"></a>1.打包处理 css 文件</h4><blockquote><p>运行 npm i style-loader css-loader -D （执行的时候从后往前安装，css-loader 是 style-loader 的依赖，所以放后面）</p></blockquote><blockquote><p>在 webpack.config.js 的 model -&gt; rules 数组中，添加 loader 的规则如下（test表示要匹配的文件类型，use表示对应要调用的loader）：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">      &#123; test : /\.css$/, use: [ &apos;style-loader&apos;, &apos;css-loader&apos; ] &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure><h4 id="2-打包处理-less-文件"><a href="#2-打包处理-less-文件" class="headerlink" title="2.打包处理 less 文件"></a>2.打包处理 less 文件</h4><blockquote><p>运行 npm i less-loader -D 命令， 安装 less 的 loader</p></blockquote><blockquote><p>在 webpack.config.js 的 module -&gt; rules 数组中，添加rules规则如下（其实和上面的方法一样）</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">      &#123; test: /\.less$/, use: [ &apos;style-loader&apos;, &apos;css-loader&apos;, &apos;less-loader&apos; ] &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure><h4 id="3-配置-postCSS-自动添加css的兼容前缀"><a href="#3-配置-postCSS-自动添加css的兼容前缀" class="headerlink" title="3.配置 postCSS 自动添加css的兼容前缀"></a>3.配置 postCSS 自动添加css的兼容前缀</h4><blockquote><p>运行 npm i postcss-loader autoprefixer -D 命令</p></blockquote><blockquote><p>在项目根目录中创建 postcss 的配置文件，postcss.config.js，并初始化以下配置：<br>const autoprefixer = require(‘autoprefixer’) // 导入自动添加前缀的插件</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  plugins: [ autoprefixer ] // 挂载插件</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>在 webpack.config.js 的 module.exports -&gt; rules 数组中，添加如下规则</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">      &#123; test: /\.css$/, use: [ &apos;style-loader&apos;, &apos;css-loader&apos;, &apos;postcss-loader&apos; ] &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure><h4 id="4-打包样式表中的图片与字体文件"><a href="#4-打包样式表中的图片与字体文件" class="headerlink" title="4.打包样式表中的图片与字体文件"></a>4.打包样式表中的图片与字体文件</h4><blockquote><p>运行 npm i url-loader file-loader -D 命令，安装插件</p></blockquote><blockquote><p>在 webpack.config.js 的 module.exports -&gt; rules 数组中，添加如下规则：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">  &#123; </span><br><span class="line">    test: /\.jpg|png|gif|bmp|ttf|eot|svg|woff|woff2$/, // 匹配常见的图片和字体类型</span><br><span class="line">    use: [ &apos;url-loader ? limit = 16940&apos; ] // 只有 limit 小于16940字节的图片才会被转为 base64 图片</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure><h4 id="5-打包处理js中的高级语法"><a href="#5-打包处理js中的高级语法" class="headerlink" title="5.打包处理js中的高级语法"></a>5.打包处理js中的高级语法</h4><blockquote><p>安装 babel 转换器相关的包： npm i babel-loader @babel/core @babel/runtime -D</p></blockquote><blockquote><p>安装 babel 语法插件相关的包： npm i @babel/preset-env @babel/plugin-transform-runtime<br>@babel/plugin-proposal-class-properties -D</p></blockquote><blockquote><p>在项目的根目录中，创建 babel 配置文件 babel.config.js  并初始化配置如下：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  presets: [&apos;@babel/preset-env&apos;],</span><br><span class="line">  plugins: [&apos;@babel/plugin-transform-runtime&apos;, &apos;@babel/plugin-proposal-class-properties&apos;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>在 webpack.config.js 的 module -&gt; rules 中添加loader规则：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// exclude 为排除项， 表示 babel-loader 不需要处理 node_modules 中的文件</span><br><span class="line">&#123; test: /\.js$/, use: &apos;babel-loader&apos;, exclude: /node_modules/&#125;,</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;一、修改-webpack-默认的打包路径&quot;&gt;&lt;a href=&quot;#一、修改-webpack-默认的打包路径&quot; class=&quot;headerlink&quot; title=&quot;一、修改 webpack 默认的打包路径&quot;&gt;&lt;/a&gt;一、修改 webpack 默认的打包路径&lt;/h3&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="webpack" scheme="http://yoursite.com/categories/webpack/"/>
+    
+    
+      <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue实例中的生命周期钩子</title>
+    <link href="http://yoursite.com/2019/12/16/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90/"/>
+    <id>http://yoursite.com/2019/12/16/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90/</id>
+    <published>2019-12-15T16:00:00.000Z</published>
+    <updated>2019-12-29T15:52:53.175Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="beforeCreate："><a href="#beforeCreate：" class="headerlink" title="beforeCreate："></a>beforeCreate：</h3><blockquote><p>这个时候Vue实例刚刚初始化，实例中的<strong>data和methods还不能被访问</strong></p></blockquote><h3 id="created："><a href="#created：" class="headerlink" title="created："></a>created：</h3><blockquote><p>这个时候实例中的<strong>data和methods已经初始化，能够访问</strong>，但是页面的dom元素还在内存里，未被渲染到页面中，因此无法获取dom中的元素</p></blockquote><h3 id="beforemount："><a href="#beforemount：" class="headerlink" title="beforemount："></a>beforemount：</h3><blockquote><p>这个时候实例已经将dom元素渲染到页面中，但是还未将页面数据更新，页面上的数据还是初始的，<strong>实例未挂载到页面的容器中</strong></p></blockquote><h3 id="mounted："><a href="#mounted：" class="headerlink" title="mounted："></a>mounted：</h3><blockquote><p>这个时候实例已经挂载到页面的容器中，<strong>页面中的数据已经是最新的</strong></p></blockquote><h3 id="beforeUpdate："><a href="#beforeUpdate：" class="headerlink" title="beforeUpdate："></a>beforeUpdate：</h3><blockquote><p>在实例挂载到页面容器后，如果data需要进行更新操作，那么会先进入beforeUpdate生命周期，在这个阶段，<strong>Vue的data（model层）已经更新，但是view（视图层）仍是旧的</strong></p></blockquote><h3 id="updated："><a href="#updated：" class="headerlink" title="updated："></a>updated：</h3><blockquote><p>在这个阶段，Vue实例已经<strong>完成虚拟dom树的数据更新并将最新的dom树渲染到视图层中</strong></p></blockquote><h3 id="beforeDestory："><a href="#beforeDestory：" class="headerlink" title="beforeDestory："></a>beforeDestory：</h3><blockquote><p>在实例销毁阶段，实例中的<strong>data和methods等属性，监听器，管道器，指令等仍能访问</strong></p></blockquote><h3 id="destoryed"><a href="#destoryed" class="headerlink" title="destoryed"></a>destoryed</h3><blockquote><p>实例完成销毁过程，实例中所有的data，methods等<strong>所有属性都不可用</strong></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;beforeCreate：&quot;&gt;&lt;a href=&quot;#beforeCreate：&quot; class=&quot;headerlink&quot; title=&quot;beforeCreate：&quot;&gt;&lt;/a&gt;beforeCreate：&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;这个时候Vue实例刚刚初始
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://yoursite.com/categories/Vue/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://yoursite.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS中实现footer置底</title>
+    <link href="http://yoursite.com/2019/12/12/CSS%E4%B8%ADfooter%E7%BD%AE%E5%BA%95/"/>
+    <id>http://yoursite.com/2019/12/12/CSS%E4%B8%ADfooter%E7%BD%AE%E5%BA%95/</id>
+    <published>2019-12-11T16:00:00.000Z</published>
+    <updated>2019-12-29T15:44:56.503Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用CSS的calc函数，在content内容中设置min-height（我用的是heigh，因为只是想实现当前浏览窗口将footer撑开到底部，不需要窗口滚动）。</p><p>下面是个例子</p><h4 id="HTML部分"><a href="#HTML部分" class="headerlink" title="HTML部分"></a>HTML部分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;内容区域&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;footer&quot;&gt;置底区域&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><h4 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.content &#123;</span><br><span class="line">    min-height: calc(100vh - 100px);  //100vh比100%好的地方在于即使没有内容也可以把区域撑开</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.footer &#123;</span><br><span class="line">    height: 100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用CSS的calc函数，在content内容中设置min-height（我用的是heigh，因为只是想实现当前浏览窗口将footer撑开到底部，不需要窗口滚动）。&lt;/p&gt;
+&lt;p&gt;下面是个例子&lt;/p&gt;
+&lt;h4 id=&quot;HTML部分&quot;&gt;&lt;a href=&quot;#HTML部分&quot; cl
+      
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS中闭包的理解</title>
+    <link href="http://yoursite.com/2019/12/09/%E9%97%AD%E5%8C%85%E7%90%86%E8%A7%A3/"/>
+    <id>http://yoursite.com/2019/12/09/%E9%97%AD%E5%8C%85%E7%90%86%E8%A7%A3/</id>
+    <published>2019-12-08T16:00:00.000Z</published>
+    <updated>2019-12-29T15:40:16.717Z</updated>
+    
+    <content type="html"><![CDATA[<p>JS中的闭包，按自己消化的理解就是：由于存在作用域链，使得父作用域无法访问子作用域的内容，而子作用域可以沿着作用域链访问父作用域乃至全局的内容；</p><p>而JS的作用域是以函数为分界的，因此闭包也可以理解为可以访问另一个函数作用域的变量的函数。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;JS中的闭包，按自己消化的理解就是：由于存在作用域链，使得父作用域无法访问子作用域的内容，而子作用域可以沿着作用域链访问父作用域乃至全局的内容；&lt;/p&gt;
+&lt;p&gt;而JS的作用域是以函数为分界的，因此闭包也可以理解为可以访问另一个函数作用域的变量的函数。&lt;/p&gt;
 
       
     
     </summary>
     
     
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
     
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>避免原型链使用过程中的属性共享问题</title>
+    <link href="http://yoursite.com/2019/12/07/%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
+    <id>http://yoursite.com/2019/12/07/%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
+    <published>2019-12-06T16:00:00.000Z</published>
+    <updated>2019-12-29T15:37:27.916Z</updated>
+    
+    <content type="html"><![CDATA[<p>在使用原型链过程中，如果同一个原型对象有不同的实例对象，那么无法在不影响其他实例对象的情况下，给这个原型对象的构造函数传递参数，情况如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function Case() &#123;</span><br><span class="line">    this.color = [&quot;red&quot;,&quot;green&quot;];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function OtherCase() &#123;&#125;</span><br><span class="line"></span><br><span class="line">OtherCase.prototype = new Case();</span><br><span class="line"></span><br><span class="line">var instance1 = new OtherCase();</span><br><span class="line">instance1.color.push(&quot;blue&quot;);</span><br><span class="line">var instance2 = new OtherCase();</span><br><span class="line">console.log(instance2.color);    //&quot;red,green,blue&quot;</span><br><span class="line">console.log(instance1.color);    //&quot;red,green,blue&quot;</span><br></pre></td></tr></table></figure><p>就如上面所示，可能目的只是往instance1的原型链上的color属性插入一个”blue”字符串，但是同时也影响了共用同一个原型对象的instance2。</p><p>解决办法就是使用call()或者apply()方法在函数内部调用原型对象的构造函数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function Case() &#123;</span><br><span class="line">    this.color = [&quot;red&quot;,&quot;green&quot;];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function OtherCase() &#123;</span><br><span class="line">    Case.apply(this);    //继承了Case</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var instance1 = new OtherCase();</span><br><span class="line">instance1.color.push(&quot;blue&quot;);</span><br><span class="line">var instance2 = new OtherCase();</span><br><span class="line">console.log(instance2.color);    //“red,green”</span><br><span class="line">console.log(instance1.color);    //&quot;red,green,blue&quot;</span><br></pre></td></tr></table></figure><p>如上面，在函数内部直接调用Case原型的构造函数，使OtherCase的每个实例都有自己的color属性。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在使用原型链过程中，如果同一个原型对象有不同的实例对象，那么无法在不影响其他实例对象的情况下，给这个原型对象的构造函数传递参数，情况如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>原型模式构造函数中的原型对象与原型实例</title>
+    <link href="http://yoursite.com/2019/11/30/%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
+    <id>http://yoursite.com/2019/11/30/%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/</id>
+    <published>2019-11-29T16:00:00.000Z</published>
+    <updated>2019-12-29T15:34:12.238Z</updated>
+    
+    <content type="html"><![CDATA[<p>虽然原型模式构造函数中的所有属性是被很多实例共享的，但是在使用不同实例的时候，我们还是希望不同实例的某些属性具备独特性，这个问题下面例子可以体现：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function School() &#123;&#125;</span><br><span class="line">School.prototype = &#123;</span><br><span class="line">name : &quot;qinghua&quot;,</span><br><span class="line">position : &quot;beijing&quot;,</span><br><span class="line">otherschool : [&quot;beida&quot;, &quot;renda&quot;],</span><br><span class="line">sayName : function() &#123;</span><br><span class="line">alert(this.name);</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var school1 = new School();</span><br><span class="line">var school2 = new School();</span><br><span class="line"></span><br><span class="line">alert(school1.otherschool); //&quot;beida,renda&quot;</span><br><span class="line">alert(school2.otherschool); //&quot;beida,renda&quot;</span><br><span class="line"></span><br><span class="line">school1.otherschool.push(&quot;beishida&quot;);</span><br><span class="line">alert(school1.otherschool); //&quot;beida,renda,beishida&quot;</span><br><span class="line">alert(school2.otherschool); //&quot;beida,renda,beishida&quot;</span><br><span class="line">alert(school1.otherschool == school2.otherschool); //true</span><br></pre></td></tr></table></figure><p>当同时创建了School.prototype的两个实例：school1和school2，他们共享了原型的所有属性，这是正常的。但是当往school1.otherschool属性更新数组内容时，可能本意只是想在school1上更新；但是由于otherschool并非存在于school1中，而是School.prototype，因此修改数组字符串时会导致school2的otherschool属性也同时被修改。</p><p>想避免这种情况，可以构造函数模式和原型模式组合使用，即让通用的属性由原型模式存放，构造函数模式用于定义实例属性。还是上面的例子：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function School(name, position, otherschool)  &#123;</span><br><span class="line">this.name = name,</span><br><span class="line">this.position = position,</span><br><span class="line">this.otherschool = [&quot;beida&quot;, &quot;renda&quot;],</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">School.prototype = &#123;</span><br><span class="line">sayName : function() &#123;</span><br><span class="line"> alert(this.name);</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var school1 = new School(&quot;qinghua&quot;, &quot;beijing&quot;);</span><br><span class="line">var school2 = new School(&quot;wuda&quot;, &quot;wuhan&quot;);</span><br><span class="line"></span><br><span class="line">school1.otherschool.push(&quot;beishida&quot;);</span><br><span class="line"></span><br><span class="line">alert(school1.otherschool);//&quot;beida,renda,beishida&quot;</span><br><span class="line">alert(school2.otherschool);//&quot;beida,renda&quot;</span><br><span class="line"></span><br><span class="line">alert(school1.otherschool == school2.otherschool);//false</span><br><span class="line">alert(school1.sayName == school2.sayName);//true</span><br></pre></td></tr></table></figure><p>这样讲通用属性和实例属性进行分离，相对来说更加灵活</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;虽然原型模式构造函数中的所有属性是被很多实例共享的，但是在使用不同实例的时候，我们还是希望不同实例的某些属性具备独特性，这个问题下面例子可以体现：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutte
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>原型模式构造函数中的原型对象与原型实例</title>
+    <link href="http://yoursite.com/2019/11/28/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
+    <id>http://yoursite.com/2019/11/28/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/</id>
+    <published>2019-11-27T16:00:00.000Z</published>
+    <updated>2019-12-29T15:28:16.724Z</updated>
+    
+    <content type="html"><![CDATA[<p>当以原型模式构造一个函数，如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function Person() &#123;</span><br><span class="line">    Person.prototype.name = &quot;Jack&quot;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>prototype（原型）属性，即调用构造函数而创建的原型对象，可以让所有对象实例共享它所包含的属性和方法。免去了在构造函数中定义实例对象的信息，而是直接将信息添加到原型对象中。<br>同时，对对象实例的属性进行赋值，只能覆盖原型对象的属性，不能影响它的属性</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var person1 = new Person();</span><br><span class="line">var person2 = new Person();</span><br><span class="line"></span><br><span class="line">alert(person1.name);    // 提示&quot;Jack&quot;</span><br><span class="line"></span><br><span class="line">person1.name = &quot;Tom&quot;;</span><br><span class="line">alert(person1.name);    // 提示&quot;Tom&quot;</span><br><span class="line">alert(person2.name);    // 提示&quot;Jack&quot;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;当以原型模式构造一个函数，如：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>call方法和apply方法---摘自JS高级程序设计</title>
+    <link href="http://yoursite.com/2019/11/25/call%E5%92%8Capply/"/>
+    <id>http://yoursite.com/2019/11/25/call%E5%92%8Capply/</id>
+    <published>2019-11-25T11:43:50.000Z</published>
+    <updated>2019-12-29T15:28:23.533Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>一、什么是call、apply方法</strong><br>每个函数都包含两个非继承而来的方法：apply()和call()、这两个方法的用途都是在特定的作用域中调用函数，实际上等于设置函数体内的this对象的值。</p><p><strong>二、aplly()</strong><br>apply方法接收两个参数：一个是其中运行函数的作用域，另一个是参数数组。其中，第二个参数可以是Array的实例，也可以是arguments对象。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function sum(num1, num2) &#123;</span><br><span class="line">return num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line">function callSum1(sum1, num2) &#123;</span><br><span class="line">     return sum.apply(this, arguments);</span><br><span class="line">&#125;</span><br><span class="line">function callSum2(num1, num2) &#123;</span><br><span class="line">    return sum.apply(this, [num1, num2]);</span><br><span class="line">&#125;</span><br><span class="line">alert(callSum1(10,10));    //20</span><br><span class="line">alert(callSum2(10,10));    //20</span><br></pre></td></tr></table></figure><p><strong>三、call()</strong><br>call()方法与apply()方法作用相同，第一个参数是this值没有变化，变化的是其余参数都直接传递给函数。换句话说，在使用call()方法时，传递给函数的参数必须逐个列举出来，如下面的例子所示。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function sum(num1, num2) &#123;</span><br><span class="line">    return num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line">function callSum(num1, num2) &#123;</span><br><span class="line">    return num.call(this, num1, num2);</span><br><span class="line">&#125;</span><br><span class="line">alert(callSum(10,10))     //20</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;一、什么是call、apply方法&lt;/strong&gt;&lt;br&gt;每个函数都包含两个非继承而来的方法：apply()和call()、这两个方法的用途都是在特定的作用域中调用函数，实际上等于设置函数体内的this对象的值。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、apll
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
     
   </entry>
   
@@ -81,33 +310,11 @@
       <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
     
     
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
       <category term="html" scheme="http://yoursite.com/tags/html/"/>
     
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
       <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/11/19/hello-world/"/>
-    <id>http://yoursite.com/2019/11/19/hello-world/</id>
-    <published>2019-11-19T11:25:22.735Z</published>
-    <updated>2019-11-19T11:25:22.735Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
     
   </entry>
   

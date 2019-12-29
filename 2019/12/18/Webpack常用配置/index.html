@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="my first blog">
-<meta name="keywords" content="html,css,javascript">
+  <meta name="description" content="一、修改 webpack 默认的打包路径 首先，webpack默认的入口文件位置为 src =&amp;gt; index.js   默认的输出文件位置为 dist =&amp;gt; main.js   如需修改打包的入口与出口，需要在webpack.config.js中添加如下配置，注意entry和output是作为属性暴露的：  123456const path = require(&amp;apos;path&amp;a">
+<meta name="keywords" content="webpack">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my_blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;19&#x2F;my-blog&#x2F;index.html">
+<meta property="og:title" content="webpack 使用的一些常用配置">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;18&#x2F;Webpack%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE&#x2F;index.html">
 <meta property="og:site_name" content="codemakesense">
-<meta property="og:description" content="my first blog">
+<meta property="og:description" content="一、修改 webpack 默认的打包路径 首先，webpack默认的入口文件位置为 src =&amp;gt; index.js   默认的输出文件位置为 dist =&amp;gt; main.js   如需修改打包的入口与出口，需要在webpack.config.js中添加如下配置，注意entry和output是作为属性暴露的：  123456const path = require(&amp;apos;path&amp;a">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-19T15:41:56.955Z">
+<meta property="og:updated_time" content="2019-12-29T15:53:10.847Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/19/my-blog/">
+<link rel="canonical" href="http://yoursite.com/2019/12/18/Webpack%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>my_blog | codemakesense</title>
+  <title>webpack 使用的一些常用配置 | codemakesense</title>
   
 
 
@@ -188,7 +188,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/19/my-blog/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/18/Webpack%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -201,7 +201,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          my_blog
+          webpack 使用的一些常用配置
         </h1>
 
         <div class="post-meta">
@@ -210,18 +210,24 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-11-19 19:43:50 / 修改时间：23:41:56" itemprop="dateCreated datePublished" datetime="2019-11-19T19:43:50+08:00">2019-11-19</time>
+              <time title="创建时间：2019-12-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-12-18T00:00:00+08:00">2019-12-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-29 23:53:10" itemprop="dateModified" datetime="2019-12-29T23:53:10+08:00">2019-12-29</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">javascript</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
             </span>
@@ -244,8 +250,90 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>my first blog</p>
+        <h3 id="一、修改-webpack-默认的打包路径"><a href="#一、修改-webpack-默认的打包路径" class="headerlink" title="一、修改 webpack 默认的打包路径"></a>一、修改 webpack 默认的打包路径</h3><blockquote>
+<p>首先，webpack默认的入口文件位置为 src =&gt; index.js</p>
+</blockquote>
+<blockquote>
+<p>默认的输出文件位置为 dist =&gt; main.js</p>
+</blockquote>
+<blockquote>
+<p>如需修改打包的入口与出口，需要在webpack.config.js中添加如下配置，注意entry和output是作为属性暴露的：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const path = require(&apos;path&apos;) // node 中专门操作路径的模块</span><br><span class="line">entry: path.join(__dirname, &apos;./src/index.js&apos;), // 定义入口文件的路径和文件名字</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.join(__dirname, &apos;./dist&apos;), // 输入文件的存放路径</span><br><span class="line">    filename: &apos;bundle.js&apos;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>##</p>
+<h3 id="二、为-webpack-添加自动打包功能"><a href="#二、为-webpack-添加自动打包功能" class="headerlink" title="二、为 webpack 添加自动打包功能"></a>二、为 webpack 添加自动打包功能</h3><blockquote>
+<p>先运行 npm i webpack-dev-server -D （-D 是–save -dev 的缩写，表示仅用于开发环境，生产环境用不到）</p>
+</blockquote>
+<blockquote>
+<p>在 package.json 文件中的 script  对象中添加 dev 属性(–open 表示打包后后自动在浏览器打开页面， –host 配置IP地址， –port 配置端口)：</p>
+</blockquote>
+<p><code>&quot;dev&quot;: &quot;webpack-dev-server --open --host 127.0.0.1 --port 8888&quot;</code></p>
+<blockquote>
+<p>将 src 中的 index.html 中的script 脚本引用路径修改为 “/buldle.js”</p>
+</blockquote>
+<blockquote>
+<p>运行 npm run dev 命令进行重新打包</p>
+</blockquote>
+<p>##</p>
+<h3 id="三、配置-html-webpack-plugin-生成预览页面"><a href="#三、配置-html-webpack-plugin-生成预览页面" class="headerlink" title="三、配置 html-webpack-plugin 生成预览页面"></a>三、配置 html-webpack-plugin 生成预览页面</h3><blockquote>
+<p>先运行 npm i html-webpack-plugin -D 安装插件</p>
+</blockquote>
+<blockquote>
+<p>修改 webpack.config.js 中的头部文件区域，添加如下配置：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const HtmlWebpackplugin = require(&quot;html-webpack-plugin&quot;)</span><br><span class="line">const htmlPlugin = new HtmlWebpackplugin(&#123;</span><br><span class="line">  template: &quot;./src/index.html&quot;,</span><br><span class="line">  filename: &quot;index.html&quot;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p>修改 webpack.config.js 中增加向外暴露的配置对象，增加一个plugins属性</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  plugins: [htmlPlugin]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>##</p>
+<h3 id="四、webpack-加载器的基本使用"><a href="#四、webpack-加载器的基本使用" class="headerlink" title="四、webpack 加载器的基本使用"></a>四、webpack 加载器的基本使用</h3><h4 id="1-打包处理-css-文件"><a href="#1-打包处理-css-文件" class="headerlink" title="1.打包处理 css 文件"></a>1.打包处理 css 文件</h4><blockquote>
+<p>运行 npm i style-loader css-loader -D （执行的时候从后往前安装，css-loader 是 style-loader 的依赖，所以放后面）</p>
+</blockquote>
+<blockquote>
+<p>在 webpack.config.js 的 model -&gt; rules 数组中，添加 loader 的规则如下（test表示要匹配的文件类型，use表示对应要调用的loader）：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">      &#123; test : /\.css$/, use: [ &apos;style-loader&apos;, &apos;css-loader&apos; ] &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="2-打包处理-less-文件"><a href="#2-打包处理-less-文件" class="headerlink" title="2.打包处理 less 文件"></a>2.打包处理 less 文件</h4><blockquote>
+<p>运行 npm i less-loader -D 命令， 安装 less 的 loader</p>
+</blockquote>
+<blockquote>
+<p>在 webpack.config.js 的 module -&gt; rules 数组中，添加rules规则如下（其实和上面的方法一样）</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">      &#123; test: /\.less$/, use: [ &apos;style-loader&apos;, &apos;css-loader&apos;, &apos;less-loader&apos; ] &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="3-配置-postCSS-自动添加css的兼容前缀"><a href="#3-配置-postCSS-自动添加css的兼容前缀" class="headerlink" title="3.配置 postCSS 自动添加css的兼容前缀"></a>3.配置 postCSS 自动添加css的兼容前缀</h4><blockquote>
+<p>运行 npm i postcss-loader autoprefixer -D 命令</p>
+</blockquote>
+<blockquote>
+<p>在项目根目录中创建 postcss 的配置文件，postcss.config.js，并初始化以下配置：<br>const autoprefixer = require(‘autoprefixer’) // 导入自动添加前缀的插件</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  plugins: [ autoprefixer ] // 挂载插件</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在 webpack.config.js 的 module.exports -&gt; rules 数组中，添加如下规则</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">      &#123; test: /\.css$/, use: [ &apos;style-loader&apos;, &apos;css-loader&apos;, &apos;postcss-loader&apos; ] &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="4-打包样式表中的图片与字体文件"><a href="#4-打包样式表中的图片与字体文件" class="headerlink" title="4.打包样式表中的图片与字体文件"></a>4.打包样式表中的图片与字体文件</h4><blockquote>
+<p>运行 npm i url-loader file-loader -D 命令，安装插件</p>
+</blockquote>
+<blockquote>
+<p>在 webpack.config.js 的 module.exports -&gt; rules 数组中，添加如下规则：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rules: [</span><br><span class="line">  &#123; </span><br><span class="line">    test: /\.jpg|png|gif|bmp|ttf|eot|svg|woff|woff2$/, // 匹配常见的图片和字体类型</span><br><span class="line">    use: [ &apos;url-loader ? limit = 16940&apos; ] // 只有 limit 小于16940字节的图片才会被转为 base64 图片</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="5-打包处理js中的高级语法"><a href="#5-打包处理js中的高级语法" class="headerlink" title="5.打包处理js中的高级语法"></a>5.打包处理js中的高级语法</h4><blockquote>
+<p>安装 babel 转换器相关的包： npm i babel-loader @babel/core @babel/runtime -D</p>
+</blockquote>
+<blockquote>
+<p>安装 babel 语法插件相关的包： npm i @babel/preset-env @babel/plugin-transform-runtime<br>@babel/plugin-proposal-class-properties -D</p>
+</blockquote>
+<blockquote>
+<p>在项目的根目录中，创建 babel 配置文件 babel.config.js  并初始化配置如下：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  presets: [&apos;@babel/preset-env&apos;],</span><br><span class="line">  plugins: [&apos;@babel/plugin-transform-runtime&apos;, &apos;@babel/plugin-proposal-class-properties&apos;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在 webpack.config.js 的 module -&gt; rules 中添加loader规则：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// exclude 为排除项， 表示 babel-loader 不需要处理 node_modules 中的文件</span><br><span class="line">&#123; test: /\.js$/, use: &apos;babel-loader&apos;, exclude: /node_modules/&#125;,</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -254,22 +342,23 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/html/" rel="tag"># html</a>
-              <a href="/tags/css/" rel="tag"># css</a>
-              <a href="/tags/javascript/" rel="tag"># javascript</a>
+              <a href="/tags/webpack/" rel="tag"># webpack</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
+                <a href="/2019/12/16/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90/" rel="next" title="Vue实例中的生命周期钩子">
+                  <i class="fa fa-chevron-left"></i> Vue实例中的生命周期钩子
+                </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/25/call%E5%92%8Capply/" rel="prev" title="call方法和apply方法---摘自JS高级程序设计">
-                  call方法和apply方法---摘自JS高级程序设计 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/12/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="prev" title="项目中 git 常用操作总结">
+                  项目中 git 常用操作总结 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -309,6 +398,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、修改-webpack-默认的打包路径"><span class="nav-number">1.</span> <span class="nav-text">一、修改 webpack 默认的打包路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、为-webpack-添加自动打包功能"><span class="nav-number">2.</span> <span class="nav-text">二、为 webpack 添加自动打包功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、配置-html-webpack-plugin-生成预览页面"><span class="nav-number">3.</span> <span class="nav-text">三、配置 html-webpack-plugin 生成预览页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、webpack-加载器的基本使用"><span class="nav-number">4.</span> <span class="nav-text">四、webpack 加载器的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-打包处理-css-文件"><span class="nav-number">4.1.</span> <span class="nav-text">1.打包处理 css 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-打包处理-less-文件"><span class="nav-number">4.2.</span> <span class="nav-text">2.打包处理 less 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-配置-postCSS-自动添加css的兼容前缀"><span class="nav-number">4.3.</span> <span class="nav-text">3.配置 postCSS 自动添加css的兼容前缀</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-打包样式表中的图片与字体文件"><span class="nav-number">4.4.</span> <span class="nav-text">4.打包样式表中的图片与字体文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-打包处理js中的高级语法"><span class="nav-number">4.5.</span> <span class="nav-text">5.打包处理js中的高级语法</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
