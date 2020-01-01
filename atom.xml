@@ -278,11 +278,11 @@
       <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
     
     
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
       <category term="html" scheme="http://yoursite.com/tags/html/"/>
     
       <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
     
   </entry>
   
