@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.0.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/%E6%98%9F%E7%90%83.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/%E6%98%9F%E7%90%83.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/%E6%98%9F%E7%90%83.png">
-  <link rel="mask-icon" href="/%E6%98%9F%E7%90%83.png" color="#222">
-  <link rel="alternate" href="/atom.xml" title="Simon | 吕亮的博客" type="application/atom+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/%E6%98%9F%E7%90%83.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/%E6%98%9F%E7%90%83.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/%E6%98%9F%E7%90%83.png">
+  <link rel="mask-icon" href="/blog/%E6%98%9F%E7%90%83.png" color="#222">
+  <link rel="alternate" href="/blog/atom.xml" title="Simon | 吕亮的博客" type="application/atom+xml">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/blog/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css">
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '/blog/',
     scheme: 'Pisces',
     version: '7.5.0',
     exturl: false,
@@ -50,14 +50,14 @@
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="call方法和apply方法---摘自JS高级程序设计">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;call%E5%92%8Capply&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;codemakesense.github.io&#x2F;blog&#x2F;2019&#x2F;11&#x2F;25&#x2F;call%E5%92%8Capply&#x2F;index.html">
 <meta property="og:site_name" content="Simon | 吕亮的博客">
 <meta property="og:description" content="一、什么是call、apply方法每个函数都包含两个非继承而来的方法：apply()和call()、这两个方法的用途都是在特定的作用域中调用函数，实际上等于设置函数体内的this对象的值。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-29T16:38:47.881Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/25/call%E5%92%8Capply/">
+<link rel="canonical" href="https://codemakesense.github.io/blog/2019/11/25/call%E5%92%8Capply/">
 
 
 <script id="page-configurations">
@@ -115,7 +115,7 @@
   <div class="site-meta">
 
     <div>
-      <a href="/" class="brand" rel="start">
+      <a href="/blog/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Simon | 吕亮的博客</span>
         <span class="logo-line-after"><i></i></span>
@@ -139,27 +139,27 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/blog/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+    <a href="/blog/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+    <a href="/blog/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+    <a href="/blog/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+    <a href="/blog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
   </ul>
@@ -188,10 +188,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/25/call%E5%92%8Capply/">
+    <link itemprop="mainEntityOfPage" href="https://codemakesense.github.io/blog/blog/2019/11/25/call%E5%92%8Capply/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/%E8%89%BE%E6%96%AF.png">
+      <meta itemprop="image" content="/blog/images/%E8%89%BE%E6%96%AF.png">
       <meta itemprop="name" content="吕亮 Simon">
       <meta itemprop="description" content="未来希望能构建易用简洁的webapp">
     </span>
@@ -226,7 +226,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                  <a href="/blog/categories/javascript/" itemprop="url" rel="index">
                     <span itemprop="name">javascript</span>
                   </a>
                 </span>
@@ -265,14 +265,14 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/javascript/" rel="tag"># javascript</a>
+              <a href="/blog/tags/javascript/" rel="tag"># javascript</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/19/my-blog/" rel="next" title="my_blog">
+                <a href="/blog/2019/11/19/my-blog/" rel="next" title="my_blog">
                   <i class="fa fa-chevron-left"></i> my_blog
                 </a>
             </div>
@@ -280,7 +280,7 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/28/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/" rel="prev" title="原型模式构造函数中的原型对象与原型实例">
+                <a href="/blog/2019/11/28/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/" rel="prev" title="原型模式构造函数中的原型对象与原型实例">
                   原型模式构造函数中的原型对象与原型实例 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
@@ -327,27 +327,27 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="吕亮 Simon"
-      src="/images/%E8%89%BE%E6%96%AF.png">
+      src="/blog/images/%E8%89%BE%E6%96%AF.png">
   <p class="site-author-name" itemprop="name">吕亮 Simon</p>
   <div class="site-description" itemprop="description">未来希望能构建易用简洁的webapp</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
+          <a href="/blog/archives/">
         
           <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-            <a href="/categories/">
+            <a href="/blog/categories/">
           
         <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+            <a href="/blog/tags/">
           
         <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
@@ -355,7 +355,7 @@
   </nav>
 </div>
   <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
+    <a href="/blog/atom.xml" rel="alternate">
       <i class="fa fa-rss"></i>RSS
     </a>
   </div>
@@ -445,14 +445,14 @@
 
   
   
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/pisces.js"></script>
-<script src="/js/next-boot.js"></script>
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/blog/lib/anime.min.js"></script>
+  <script src="/blog/lib/pjax/pjax.min.js"></script>
+  <script src="/blog/lib/velocity/velocity.min.js"></script>
+  <script src="/blog/lib/velocity/velocity.ui.min.js"></script>
+<script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script>
+<script src="/blog/js/schemes/pisces.js"></script>
+<script src="/blog/js/next-boot.js"></script>
   <script>
 var pjax = new Pjax({
   selectors: [
