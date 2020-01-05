@@ -122,9 +122,9 @@
     <link href="http://yoursite.com/2019/12/12/CSS%E4%B8%ADfooter%E7%BD%AE%E5%BA%95/"/>
     <id>http://yoursite.com/2019/12/12/CSS%E4%B8%ADfooter%E7%BD%AE%E5%BA%95/</id>
     <published>2019-12-11T16:00:00.000Z</published>
-    <updated>2019-12-29T16:39:00.497Z</updated>
+    <updated>2020-01-05T08:49:49.255Z</updated>
     
-    <content type="html"><![CDATA[<p>使用CSS的calc函数，在content内容中设置min-height（我用的是heigh，因为只是想实现当前浏览窗口将footer撑开到底部，不需要窗口滚动）。</p><a id="more"></a><p>下面是个例子</p><h4 id="HTML部分"><a href="#HTML部分" class="headerlink" title="HTML部分"></a>HTML部分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;内容区域&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;footer&quot;&gt;置底区域&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><h4 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.content &#123;</span><br><span class="line">    min-height: calc(100vh - 100px);  //100vh比100%好的地方在于即使没有内容也可以把区域撑开</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.footer &#123;</span><br><span class="line">    height: 100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>使用CSS的calc函数，在content内容中设置min-height（我用的是heigh，因为只是想实现当前浏览窗口将footer撑开到底部，不需要窗口滚动）。</p><a id="more"></a><p>下面是个例子</p><h4 id="HTML部分"><a href="#HTML部分" class="headerlink" title="HTML部分"></a>HTML部分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;内容区域&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;footer&quot;&gt;置底区域&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><h4 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.content &#123;</span><br><span class="line">min-height: calc(100vh - 100px);  //100vh比100%好的地方在于即使没有内容也可以把区域撑开</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.footer &#123;</span><br><span class="line">height: 100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -278,11 +278,11 @@
       <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
     
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
-    
       <category term="html" scheme="http://yoursite.com/tags/html/"/>
     
       <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
     
   </entry>
   
